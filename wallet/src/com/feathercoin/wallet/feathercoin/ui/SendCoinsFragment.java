@@ -406,7 +406,7 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 
 				final AlertDialog.Builder dialog = new AlertDialog.Builder(activity);
 				dialog.setMessage(getString(R.string.send_coins_dialog_fee_message,
-						Constants.CURRENCY_CODE_LITECOIN + " " + WalletUtils.formatValue(Constants.DEFAULT_TX_FEE, Constants.FTC_PRECISION)));
+						Constants.CURRENCY_CODE_FEATHERCOIN + " " + WalletUtils.formatValue(Constants.DEFAULT_TX_FEE, Constants.FTC_PRECISION)));
 				if (allowLowFee)
 				{
 					dialog.setPositiveButton(R.string.send_coins_dialog_fee_button_send, new DialogInterface.OnClickListener()
@@ -686,7 +686,7 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 		dismissPopup();
 
 		final CurrencyTextView viewAvailable = (CurrencyTextView) popupAvailableView.findViewById(R.id.send_coins_popup_available_amount);
-		viewAvailable.setPrefix(Constants.CURRENCY_CODE_LITECOIN);
+		viewAvailable.setPrefix(Constants.CURRENCY_CODE_FEATHERCOIN);
 		viewAvailable.setAmount(available);
 
 		final TextView viewPending = (TextView) popupAvailableView.findViewById(R.id.send_coins_popup_available_pending);
