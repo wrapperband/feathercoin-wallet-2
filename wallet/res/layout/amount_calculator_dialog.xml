@@ -5,7 +5,11 @@
 	android:layout_height="wrap_content"
 	android:orientation="vertical" >
 
+<<<<<<< HEAD
 	<com.feathercoin.wallet.ui.CurrencyAmountView
+=======
+	<com.feathercoin.wallet.feathercoin.ui.CurrencyAmountView
+>>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 		android:id="@+id/amount_calculator_row_ltc"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -19,9 +23,15 @@
 			android:imeOptions="actionDone|flagNoExtractUi"
 			android:textSize="@dimen/font_size_xlarge"
 			tools:ignore="TextFields" />
+<<<<<<< HEAD
 	</com.feathercoin.wallet.ui.CurrencyAmountView>
 
 	<com.feathercoin.wallet.ui.CurrencyAmountView
+=======
+	</com.feathercoin.wallet.feathercoin.ui.CurrencyAmountView>
+
+	<com.feathercoin.wallet.feathercoin.ui.CurrencyAmountView
+>>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 		android:id="@+id/amount_calculator_row_local"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -35,7 +45,11 @@
 			android:imeOptions="actionDone|flagNoExtractUi"
 			android:textSize="@dimen/font_size_xlarge"
 			tools:ignore="TextFields" />
+<<<<<<< HEAD
 	</com.feathercoin.wallet.ui.CurrencyAmountView>
+=======
+	</com.feathercoin.wallet.feathercoin.ui.CurrencyAmountView>
+>>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 
 	<TextView
 		android:id="@+id/amount_calculator_rate"

@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.ui;
+package com.feathercoin.wallet.feathercoin.ui;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -26,11 +26,11 @@ import android.preference.PreferenceScreen;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockPreferenceActivity;
 import com.actionbarsherlock.view.MenuItem;
+import com.feathercoin.wallet.feathercoin.Constants;
+import com.feathercoin.wallet.feathercoin.WalletApplication;
 import com.google.feathercoin.core.VersionMessage;
 
-import com.feathercoin.wallet.Constants;
-import com.feathercoin.wallet.WalletApplication;
-import com.feathercoin.wallet.R;
+import de.schildbach.wallet.feathercoin.R;
 
 /**
  * @author Andreas Schildbach

@@ -8,7 +8,11 @@
 
 	<fragment
 		android:id="@+id/send_coins_fragment"
+<<<<<<< HEAD
 		android:name="com.feathercoin.wallet.ui.SendCoinsFragment"
+=======
+		android:name="com.feathercoin.wallet.feathercoin.ui.SendCoinsFragment"
+>>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content" />
 

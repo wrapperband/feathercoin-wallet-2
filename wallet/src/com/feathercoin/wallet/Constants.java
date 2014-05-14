@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet;
+package com.feathercoin.wallet.feathercoin;
 
 import java.io.File;
 import java.math.BigInteger;
@@ -26,7 +26,7 @@ import android.text.format.DateUtils;
 import com.google.feathercoin.core.NetworkParameters;
 import com.google.feathercoin.core.Utils;
 
-import com.feathercoin.wallet.R;
+import de.schildbach.wallet.feathercoin.R;
 
 /**
  * @author Andreas Schildbach
