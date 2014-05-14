@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	package="com.feathercoin.wallet"
-	android:installLocation="preferExternal"
+	android:installLocation="auto"
 	android:versionCode="10021"
 	android:versionName="1.021" >
 	<!--android:installLocation="preferExternal"-->

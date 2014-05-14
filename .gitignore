@@ -1,8 +1,8 @@
 local.properties
-.classpath
-.project
 .settings/
 bin/
 gen/
 target/
 .idea/
+*.classpath
+*.project
