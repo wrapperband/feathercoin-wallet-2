@@ -34,11 +34,8 @@
 <!--
 			<fragment
 				android:id="@+id/wallet_addresses_fragment"
-<<<<<<< HEAD
+
 				android:name="com.feathercoin.wallet.ui.WalletAddressesFragment"
-=======
-				android:name="WalletAddressesFragment"
->>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 				android:layout_width="match_parent"
 				android:layout_height="match_parent" />
 -->
@@ -85,11 +82,7 @@
 
 			<fragment
 				android:id="@+id/sending_addresses_fragment"
-<<<<<<< HEAD
 				android:name="com.feathercoin.wallet.ui.SendingAddressesFragment"
-=======
-				android:name="com.feathercoin.wallet.feathercoin.ui.SendingAddressesFragment"
->>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 				android:layout_width="match_parent"
 				android:layout_height="match_parent" />
 		</FrameLayout>

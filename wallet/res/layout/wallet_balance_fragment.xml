@@ -6,22 +6,13 @@
 	android:layout_height="wrap_content"
 	android:gravity="center"
 	android:orientation="vertical" >
-
-<<<<<<< HEAD
 	<com.feathercoin.wallet.ui.CurrencyTextView
-=======
-	<com.feathercoin.wallet.feathercoin.ui.CurrencyTextView
->>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 		android:id="@+id/wallet_balance"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:textSize="@dimen/font_size_huge" />
 
-<<<<<<< HEAD
 	<com.feathercoin.wallet.ui.CurrencyTextView
-=======
-	<com.feathercoin.wallet.feathercoin.ui.CurrencyTextView
->>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 		android:id="@+id/wallet_balance_local"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"

@@ -65,11 +65,8 @@
 		android:textSize="@dimen/font_size_small"
 		android:textStyle="bold" />
 
-<<<<<<< HEAD
+
 	<com.feathercoin.wallet.ui.CurrencyAmountView
-=======
-	<com.feathercoin.wallet.feathercoin.ui.CurrencyAmountView
->>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 		android:id="@+id/send_coins_amount"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -82,12 +79,8 @@
 			android:imeOptions="flagNoExtractUi"
 			android:textSize="@dimen/font_size_xlarge"
 			tools:ignore="TextFields" />
-<<<<<<< HEAD
-	</com.feathercoin.wallet.ui.CurrencyAmountView>
-=======
-	</com.feathercoin.wallet.feathercoin.ui.CurrencyAmountView>
->>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 
+	</com.feathercoin.wallet.ui.CurrencyAmountView>
 	<TextView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -98,11 +91,8 @@
 		android:textSize="@dimen/font_size_small"
 		android:textStyle="bold" />
 
-<<<<<<< HEAD
+
 	<com.feathercoin.wallet.ui.CurrencyAmountView
-=======
-	<com.feathercoin.wallet.feathercoin.ui.CurrencyAmountView
->>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 		android:id="@+id/send_coins_fee"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -115,11 +105,8 @@
 			android:imeOptions="flagNoExtractUi"
 			android:textSize="@dimen/font_size_xlarge"
 			tools:ignore="TextFields" />
-<<<<<<< HEAD
+
 	</com.feathercoin.wallet.ui.CurrencyAmountView>
-=======
-	</com.feathercoin.wallet.feathercoin.ui.CurrencyAmountView>
->>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 
 	<!-- stretch dummy -->
 

@@ -12,12 +12,7 @@
 		android:text="@string/send_coins_fragment_available_label"
 		android:textSize="@dimen/font_size_small"
 		android:textStyle="bold" />
-
-<<<<<<< HEAD
 	<com.feathercoin.wallet.ui.CurrencyTextView
-=======
-	<com.feathercoin.wallet.feathercoin.ui.CurrencyTextView
->>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 		android:id="@+id/send_coins_popup_available_amount"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
