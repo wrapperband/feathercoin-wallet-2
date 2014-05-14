@@ -161,7 +161,6 @@
 	<string name="preferences_autosync_title">Sincronizar en carga</string>
 	<string name="preferences_category_diagnostics">Diagnósticos</string>
 	<string name="preferences_category_labs">Labs</string>
-	<string name="preferences_autosync_title">Sincronizar durante la carga</string>
 	<string name="preferences_autosync_summary">Mantenerse sincronizado a blockchain en segundo plano mientras está en carga.</string>
 	<string name="preferences_connectivity_notification_title">Indicador de conectividad</string>
 	<string name="preferences_connectivity_notification_summary">Mostrar número actual de pares conectados en el área de notificación.</string>

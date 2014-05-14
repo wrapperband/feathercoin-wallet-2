@@ -817,6 +817,7 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 		}
 	}
 
+	@SuppressLint("ResourceAsColor")
 	private void updateView()
 	{
 		if (validatedAddress != null)
