@@ -15,7 +15,11 @@
 		android:baselineAligned="true"
 		android:orientation="horizontal" >
 
+<<<<<<< HEAD
 		<com.feathercoin.wallet.util.CircularProgressView
+=======
+		<com.feathercoin.wallet.feathercoin.util.CircularProgressView
+>>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 			android:id="@+id/transaction_row_confidence_circular"
 			android:layout_width="@dimen/symbol_size_normal"
 			android:layout_height="@dimen/symbol_size_normal"
@@ -55,7 +59,11 @@
 			android:singleLine="true"
 			android:textSize="@dimen/font_size_normal" />
 
+<<<<<<< HEAD
 		<com.feathercoin.wallet.ui.CurrencyTextView
+=======
+		<com.feathercoin.wallet.feathercoin.ui.CurrencyTextView
+>>>>>>> 7dc17a2e96d198f26cbb7a87aac5abf51b74a3bc
 			android:id="@+id/transaction_row_value"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
