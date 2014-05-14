@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import java.math.BigInteger;
 
@@ -59,10 +59,6 @@ import com.actionbarsherlock.view.ActionMode;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.feathercoin.wallet.feathercoin.AddressBookProvider;
-import com.feathercoin.wallet.feathercoin.Constants;
-import com.feathercoin.wallet.feathercoin.WalletApplication;
-import com.feathercoin.wallet.feathercoin.service.BlockchainServiceImpl;
 import com.google.feathercoin.core.Address;
 import com.google.feathercoin.core.AddressFormatException;
 import com.google.feathercoin.core.NetworkParameters;
@@ -76,10 +72,14 @@ import com.google.feathercoin.core.Wallet.SendRequest;
 import com.google.feathercoin.uri.FeathercoinURI;
 import com.google.feathercoin.uri.FeathercoinURIParseException;
 
-import de.schildbach.wallet.feathercoin.integration.android.FeathercoinIntegration;
-import com.feathercoin.wallet.feathercoin.service.BlockchainService;
-import com.feathercoin.wallet.feathercoin.util.WalletUtils;
-import de.schildbach.wallet.feathercoin.R;
+import com.feathercoin.wallet.AddressBookProvider;
+import com.feathercoin.wallet.Constants;
+import com.feathercoin.wallet.WalletApplication;
+import com.feathercoin.wallet.integration.android.FeathercoinIntegration;
+import com.feathercoin.wallet.service.BlockchainService;
+import com.feathercoin.wallet.service.BlockchainServiceImpl;
+import com.feathercoin.wallet.util.WalletUtils;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach
@@ -406,7 +406,7 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 
 				final AlertDialog.Builder dialog = new AlertDialog.Builder(activity);
 				dialog.setMessage(getString(R.string.send_coins_dialog_fee_message,
-						Constants.CURRENCY_CODE_FEATHERCOIN + " " + WalletUtils.formatValue(Constants.DEFAULT_TX_FEE, Constants.FTC_PRECISION)));
+						Constants.CURRENCY_CODE_LITECOIN + " " + WalletUtils.formatValue(Constants.DEFAULT_TX_FEE, Constants.FTC_PRECISION)));
 				if (allowLowFee)
 				{
 					dialog.setPositiveButton(R.string.send_coins_dialog_fee_button_send, new DialogInterface.OnClickListener()
@@ -686,7 +686,7 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 		dismissPopup();
 
 		final CurrencyTextView viewAvailable = (CurrencyTextView) popupAvailableView.findViewById(R.id.send_coins_popup_available_amount);
-		viewAvailable.setPrefix(Constants.CURRENCY_CODE_FEATHERCOIN);
+		viewAvailable.setPrefix(Constants.CURRENCY_CODE_LITECOIN);
 		viewAvailable.setAmount(available);
 
 		final TextView viewPending = (TextView) popupAvailableView.findViewById(R.id.send_coins_popup_available_pending);
@@ -817,6 +817,7 @@ public final class SendCoinsFragment extends SherlockFragment implements AmountC
 		}
 	}
 
+	@SuppressLint("ResourceAsColor")
 	private void updateView()
 	{
 		if (validatedAddress != null)

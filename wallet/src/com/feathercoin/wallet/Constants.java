@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin;
+package com.feathercoin.wallet;
 
 import java.io.File;
 import java.math.BigInteger;
@@ -26,7 +26,7 @@ import android.text.format.DateUtils;
 import com.google.feathercoin.core.NetworkParameters;
 import com.google.feathercoin.core.Utils;
 
-import de.schildbach.wallet.feathercoin.R;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach
@@ -86,7 +86,7 @@ public class Constants
 	public static final long BLOCKCHAIN_STATE_BROADCAST_THROTTLE_MS = DateUtils.SECOND_IN_MILLIS;
 	public static final long BLOCKCHAIN_UPTODATE_THRESHOLD_MS = DateUtils.HOUR_IN_MILLIS;
 
-	public static final String CURRENCY_CODE_FEATHERCOIN = "FTC";
+	public static final String CURRENCY_CODE_LITECOIN = "FTC";
 	public static final char CHAR_HAIR_SPACE = '\u200a';
 	public static final char CHAR_THIN_SPACE = '\u2009';
 	public static final char CHAR_ALMOST_EQUAL_TO = '\u2248';
@@ -107,7 +107,7 @@ public class Constants
 	public static final String LICENSE_URL = "http://www.gnu.org/licenses/gpl-3.0.txt";
 	public static final String SOURCE_URL = "https://github.com/hank/feathercoin-wallet";
 	public static final String BINARY_URL = "https://github.com/hank/feathercoin-wallet";
-	public static final String CREDITS_FEATHERCOINJ_URL = "http://code.google.com/p/feathercoinj/";
+	public static final String CREDITS_LITECOINJ_URL = "http://code.google.com/p/feathercoinj/";
 	public static final String CREDITS_ZXING_URL = "http://code.google.com/p/zxing/";
 	public static final String CREDITS_ICON_URL = "https://bitcointalk.org/index.php?topic=181443.msg1928890#msg1928890";
 	public static final String AUTHOR_TWITTER_URL = "https://twitter.com/#!/bitcoins4life";
