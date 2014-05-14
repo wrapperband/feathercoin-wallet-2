@@ -105,8 +105,8 @@ public class Constants
 	public static final String REPORT_SUBJECT_CRASH = "Crash report";
 
 	public static final String LICENSE_URL = "http://www.gnu.org/licenses/gpl-3.0.txt";
-	public static final String SOURCE_URL = "https://github.com/hank/feathercoin-wallet";
-	public static final String BINARY_URL = "https://github.com/hank/feathercoin-wallet";
+	public static final String SOURCE_URL = "https://github.com/wellenreiter01/feathercoin-wallet-2";
+	public static final String BINARY_URL = "https://github.com/wellenreiter01/feathercoin-wallet-2";
 	public static final String CREDITS_FEATHERCOINJ_URL = "http://code.google.com/p/feathercoinj/";
 	public static final String CREDITS_ZXING_URL = "http://code.google.com/p/zxing/";
 	public static final String CREDITS_ICON_URL = "https://bitcointalk.org/index.php?topic=181443.msg1928890#msg1928890";
@@ -114,7 +114,7 @@ public class Constants
 	public static final String AUTHOR_GOOGLEPLUS_URL = "https://profiles.google.com/hardware.hank";
 	public static final String MARKET_APP_URL = "market://details?id=%s";
 	public static final String WEBMARKET_APP_URL = "https://play.google.com/store/apps/details?id=%s";
-	public static final String MARKET_PUBLISHER_URL = "market://search?q=pub:\"Joint Security Area\"";
+	public static final String MARKET_PUBLISHER_URL = "market://search?q=pub:\"Feathercoin Application Team\"";
 
 	private static final String VERSION_URL_PROD = "http://wallet.schildbach.de/version";
 	private static final String VERSION_URL_TEST = "http://wallet.schildbach.de/version_test";
