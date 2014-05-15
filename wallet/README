@@ -27,10 +27,10 @@ Certain actions cause rolling backups of your private keys to app internal stora
 
 Private keys can be exported to and imported from external storage:
 
-/sdcard/Download/litecoin-wallet-keys-<yyyy-MM-dd>
+/sdcard/Download/feathercoin-wallet-keys-<yyyy-MM-dd>
 	Export of private keys for prodnet
 
-/sdcard/Download/litecoin-wallet-keys-testnet-<yyyy-MM-dd>
+/sdcard/Download/feathercoin-wallet-keys-testnet-<yyyy-MM-dd>
 	Export of private keys for testnet
 
 The export file is encrypted using your chosen password. You can OpenSSL to decrypt:
@@ -68,17 +68,17 @@ and unpack it to your workspace directory. Switch to that Android SDK directory,
 
 to download the necessary API level.
 
-Next, you need to build litecoinj. In your workspace, use
+Next, you need to build feathercoinj. In your workspace, use
 
-	git clone -b release-0.7 https://code.google.com/p/litecoinj/ litecoinj
-	cd litecoinj
+	git clone https://github.com/wellenreiter01/feathercoinj/ feathercoinj
+	cd feathercoinj
 	mvn clean install
 
 Finally, you can build Feathercoin Wallet and sign it with your development key. Again in your workspace,
 use
 
-	git clone https://code.google.com/p/litecoin-wallet/ litecoin-wallet
-	cd litecoin-wallet
+	git clone https://github.com/wellenreiter01/feathercoin-wallet-2 feathercoin-wallet
+	cd feathercoin-wallet
 	mvn clean install -Dandroid.sdk.path=<path to your android sdk>
 
 To upload the app to your Android device, use
@@ -90,27 +90,24 @@ To upload the app to your Android device, use
 
 SETTING UP FOR DEVELOPMENT
 
-Make sure you've got Eclipse 3.7 (Indigo) with ADT 20 installed.
+Make sure you've got Android Studio.
 
 Use Git to check out the project to your workspace:
 
-  git clone https://code.google.com/p/litecoin-wallet/ litecoin-wallet
+  git clone https://github.com/wellenreiter01/feathercoin-wallet-2 feathercoin-wallet
 
 Change to that directory.
 
-Use the maven-eclipse-plugin to create Eclipse project files:
+In Android Studio, use Import Project and Select the project directory
+In the following window, choose import project from external model and make sure maven is selected 
+Then next,
+Check the 2 options:
+- Search for projects recursively
+- Import maven projects automatically
 
-  mvn eclipse:eclipse
+Next twice, choose the SDK for the project,
+Click next and finish
 
-Optional: In the generated .classpath, remove the org.eclipse.jdt.launching.JRE_CONTAINER
-classpath entry. It does not belong there, but cannot be excluded from being generated currently.
-
-In Eclipse, use File -> Import -> General -> Existing Project into Workspace to import project.
-
-If you see loads of "should be tagged with @Override" errors, set
-
-  Project -> Properties -> Java Compiler -> Errors/Warnings -> Annotations ->
-  Missing @Override annotation to 'Warning'
 
 
 NFC (Near field communication)
@@ -141,13 +138,13 @@ Instructions for preparing an NFC tag with your address:
 
 EXCHANGE RATES
 
-Feathercoin Wallet reads this feed from "litecoin charts" for getting exchange rates:
+Feathercoin Wallet reads this feed from "feathercoin api" for getting exchange rates:
 
-	http://litecoincharts.com/t/weighted_prices.json
+	http://api.feathercoin.com
 
 The feed is described on this page (see Weighted Prices):
 
-	http://litecoincharts.com/about/markets-api/
+	https://www.feathercoin.com/feathercoin-api/
 
 I chose this feed because it is not dependent on a single exchange. However, you should keep in
 mind it's always a 24h average (falling back to 7d or even 30d if no trade occurred for a long
@@ -162,8 +159,8 @@ The feed is described here:
 	https://blockchain.info/api/exchange_rates_api
 
 
-LITECOINJ
+FEATHERCOINJ
 
-Feathercoin Wallet uses litecoinj for Feathercoin specific logic:
+Feathercoin Wallet uses Feathercoinj for Feathercoin specific logic:
 
-http://code.google.com/p/litecoinj/
+https://github.com/wellenreiter01/feathercoinj/
