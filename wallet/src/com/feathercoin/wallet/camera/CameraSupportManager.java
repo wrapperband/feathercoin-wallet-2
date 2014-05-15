@@ -17,7 +17,6 @@
 
 package com.feathercoin.wallet.camera;
 
-import android.os.Build;
 import com.feathercoin.wallet.util.PlatformSupportManager;
 
 /**

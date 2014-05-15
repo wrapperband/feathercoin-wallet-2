@@ -17,16 +17,14 @@
 
 package com.feathercoin.wallet;
 
-import java.io.File;
-import java.math.BigInteger;
-
 import android.os.Environment;
 import android.text.format.DateUtils;
 
 import com.google.feathercoin.core.NetworkParameters;
 import com.google.feathercoin.core.Utils;
 
-import com.feathercoin.wallet.R;
+import java.io.File;
+import java.math.BigInteger;
 
 /**
  * @author Andreas Schildbach
@@ -99,8 +97,8 @@ public class Constants
 	public static final int FTC_PRECISION = 8;
 	public static final int LOCAL_PRECISION = 4;
 
-	public static final String DONATION_ADDRESS = "6xZLkkeMF5mXrfiM5g4yR5153e4QVfaSeF";
-	public static final String REPORT_EMAIL = "ralree@gmail.com";
+	public static final String DONATION_ADDRESS = "6rAxqyuqBjP2VU8iXoNjYeHAPU6g3vP7Cc";
+	public static final String REPORT_EMAIL = "wellenreiter01@t-online.de";
 	public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
 	public static final String REPORT_SUBJECT_CRASH = "Crash report";
 

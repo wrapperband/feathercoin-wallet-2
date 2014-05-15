@@ -17,13 +17,6 @@
 
 package com.feathercoin.wallet.camera;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 import android.annotation.SuppressLint;
 import android.graphics.Point;
 import android.graphics.Rect;
@@ -32,6 +25,13 @@ import android.hardware.Camera.PreviewCallback;
 import android.view.SurfaceHolder;
 
 import com.google.zxing.PlanarYUVLuminanceSource;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * @author Andreas Schildbach

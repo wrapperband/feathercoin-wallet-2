@@ -17,9 +17,7 @@
 
 package com.feathercoin.wallet.camera;
 
-import android.annotation.TargetApi;
 import android.hardware.Camera;
-import android.os.Build;
 
 /**
  * @author Andreas Schildbach
