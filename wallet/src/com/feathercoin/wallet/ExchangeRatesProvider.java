@@ -205,7 +205,7 @@ public class ExchangeRatesProvider extends ContentProvider
                 }
             }*/
             // Handle FTC/USD special since we have to do maths
-            URL URL = null;
+        /*    URL URL = null;
             try {
                 URL = new URL("https://btc-e.com/api/2/ftc_btc/ticker");
             } catch (MalformedURLException e) {
@@ -284,7 +284,49 @@ public class ExchangeRatesProvider extends ContentProvider
             {
                 if (reader != null)
                     reader.close();
+            }*/
+
+            URL URL = null;
+            try {
+                URL = new URL("http://api.feathercoin.com/?output=currencies&amount=1");
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
             }
+            URLConnection connection = URL.openConnection();
+            connection.setConnectTimeout(TIMEOUT_MS);
+            connection.setReadTimeout(TIMEOUT_MS);
+            connection.connect();
+            StringBuilder content = new StringBuilder();
+
+            Reader reader = null;
+            try
+            {
+                reader = new InputStreamReader(new BufferedInputStream(connection.getInputStream(), 1024));
+                IOUtils.copy(reader, content);
+                final JSONObject head = new JSONObject(content.toString());
+                //JSONObject ticker = head.getJSONObject("ticker");
+                Double dUSD = head.getDouble("usd");
+                Double dAUD = head.getDouble("aud");
+                Double dEUR = head.getDouble("eur");
+                Double dGBP = head.getDouble("gbp");
+                Double dNZD = head.getDouble("nzd");
+                String s_usd = String.format("%.4f", dUSD).replace(',', '.');
+                String s_aud = String.format("%.4f", dAUD).replace(',', '.');
+                String s_eur = String.format("%.4f", dEUR).replace(',', '.');
+                String s_gbp = String.format("%.4f", dGBP).replace(',', '.');
+                String s_nzd = String.format("%.4f", dNZD).replace(',', '.');
+                rates.put("USD", new ExchangeRate("USD", Utils.toNanoCoins(s_usd), URL.getHost()));
+                rates.put("AUD", new ExchangeRate("AUD", Utils.toNanoCoins(s_aud), URL.getHost()));
+                rates.put("EUR", new ExchangeRate("EUR", Utils.toNanoCoins(s_eur), URL.getHost()));
+                rates.put("GBP", new ExchangeRate("GBP", Utils.toNanoCoins(s_gbp), URL.getHost()));
+                rates.put("NZD", new ExchangeRate("NZD", Utils.toNanoCoins(s_nzd), URL.getHost()));
+            } finally
+            {
+                if (reader != null)
+                    reader.close();
+            }
+
+
             return rates;
         }
 		catch (final IOException x)
