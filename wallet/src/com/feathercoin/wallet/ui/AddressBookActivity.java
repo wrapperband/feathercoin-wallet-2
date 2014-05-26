@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 
 import com.actionbarsherlock.app.ActionBar;
@@ -60,6 +61,7 @@ public final class AddressBookActivity extends AbstractWalletActivity
 
 		setContentView(R.layout.address_book_content);
 
+
 		final ActionBar actionBar = getSupportActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 
@@ -67,7 +69,31 @@ public final class AddressBookActivity extends AbstractWalletActivity
 
 		final FragmentManager fm = getSupportFragmentManager();
 
-		if (pager != null)
+        walletAddressesFragment = (WalletAddressesFragment) fm.findFragmentByTag("wallet_addresses");
+        sendingAddressesFragment = (SendingAddressesFragment) fm.findFragmentByTag("sending_addresses");
+
+
+
+        final FragmentTransaction removal = fm.beginTransaction();
+
+        if (walletAddressesFragment == null)
+            walletAddressesFragment = new WalletAddressesFragment();
+        else
+            removal.remove(walletAddressesFragment);
+
+        if (sendingAddressesFragment == null)
+            sendingAddressesFragment = new SendingAddressesFragment();
+        else
+            removal.remove(sendingAddressesFragment);
+
+        if (!removal.isEmpty())
+        {
+            removal.commit();
+            fm.executePendingTransactions();
+        }
+
+
+        if (pager != null)
 		{
 			final ViewPagerTabs pagerTabs = (ViewPagerTabs) findViewById(R.id.address_book_pager_tabs);
 			pagerTabs.addTabLabels(R.string.address_book_list_receiving_title, R.string.address_book_list_sending_title);
@@ -84,14 +110,20 @@ public final class AddressBookActivity extends AbstractWalletActivity
 			pagerTabs.onPageSelected(position);
 			pagerTabs.onPageScrolled(position, 0, 0);
 
-			walletAddressesFragment = new WalletAddressesFragment();
-			sendingAddressesFragment = new SendingAddressesFragment();
+			//walletAddressesFragment = new WalletAddressesFragment();
+			//sendingAddressesFragment = new SendingAddressesFragment();
 		}
 		else
 		{
             // The following line causes a bug on some phones.  See issue #10.
 			//walletAddressesFragment = (WalletAddressesFragment) fm.findFragmentById(R.id.wallet_addresses_fragment);
-			sendingAddressesFragment = (SendingAddressesFragment) fm.findFragmentById(R.id.sending_addresses_fragment);
+			
+			// Ilocans Test Correcting bug
+			//sendingAddressesFragment = (SendingAddressesFragment) fm.findFragmentById(R.id.sending_addresses_fragment);
+			
+			fm.beginTransaction().add(R.id.wallet_addresses_fragment, walletAddressesFragment, "wallet_addresses")
+					.add(R.id.sending_addresses_fragment, sendingAddressesFragment, "sending_addresses").commit();
+
 		}
 
 		updateFragments();
