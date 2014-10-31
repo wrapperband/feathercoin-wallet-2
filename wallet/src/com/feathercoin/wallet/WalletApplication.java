@@ -72,7 +72,6 @@ public class WalletApplication extends Application
 	private Intent blockchainServiceCancelCoinsReceivedIntent;
 	private Intent blockchainServiceResetBlockchainIntent;
 	private ActivityManager activityManager;
-
 	private static final Charset UTF_8 = Charset.forName("UTF-8");
 	private static final String TAG = "Feathercoin"+WalletApplication.class.getSimpleName();
 
