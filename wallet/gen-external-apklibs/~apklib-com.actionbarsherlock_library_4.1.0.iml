@@ -8,7 +8,7 @@
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/com.actionbarsherlock_library_4.1.0/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/com.actionbarsherlock_library_4.1.0/res" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/com.actionbarsherlock_library_4.1.0/assets" />
-        <option name="LIBS_FOLDER_RELATIVE_PATH" value="/com.actionbarsherlock_library_4.1.0/libs" />
+        <option name="LIBS_FOLDER_RELATIVE_PATH" value="/com.actionbarsherlock_library_4.1.0/$PATH_TO_neoscrypt$" />
         <option name="LIBRARY_PROJECT" value="true" />
       </configuration>
     </facet>

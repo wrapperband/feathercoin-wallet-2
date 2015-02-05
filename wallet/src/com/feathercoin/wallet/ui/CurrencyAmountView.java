@@ -17,8 +17,6 @@
 
 package com.feathercoin.wallet.ui;
 
-import java.math.BigInteger;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Paint;
@@ -40,11 +38,12 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
+import com.feathercoin.wallet.Constants;
+import com.feathercoin.wallet.R;
+import com.feathercoin.wallet.util.WalletUtils;
 import com.google.feathercoin.core.Utils;
 
-import com.feathercoin.wallet.Constants;
-import com.feathercoin.wallet.util.WalletUtils;
-import com.feathercoin.wallet.R;
+import java.math.BigInteger;
 
 /**
  * @author Andreas Schildbach
