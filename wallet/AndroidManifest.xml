@@ -3,8 +3,8 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	package="com.feathercoin.wallet"
 	android:installLocation="auto"
-	android:versionCode="10099"
-	android:versionName="1.099" >
+	android:versionCode="30003"
+	android:versionName="3.03" >
 	<!--android:installLocation="preferExternal"-->
 	<!-- Change to auto to install on emulator -->
 
