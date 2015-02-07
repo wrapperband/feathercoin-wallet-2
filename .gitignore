@@ -3,6 +3,7 @@ local.properties
 bin/
 gen/
 target/
-.idea/
+.idea/*
 *.classpath
 *.project
+*.apk
