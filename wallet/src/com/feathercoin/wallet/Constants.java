@@ -98,7 +98,7 @@ public class Constants
 	public static final int LOCAL_PRECISION = 4;
 
 	public static final String DONATION_ADDRESS = "6rAxqyuqBjP2VU8iXoNjYeHAPU6g3vP7Cc";
-	public static final String REPORT_EMAIL = "feathercoin-android-wallet@googlegroups.com";
+	public static final String REPORT_EMAIL = "feathercoin-application-team@googlegroups.com";
 	public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
 	public static final String REPORT_SUBJECT_CRASH = "Crash report";
 
@@ -108,8 +108,8 @@ public class Constants
 	public static final String CREDITS_FEATHERCOINJ_URL = "http://code.google.com/p/feathercoinj/";
 	public static final String CREDITS_ZXING_URL = "http://code.google.com/p/zxing/";
 	public static final String CREDITS_ICON_URL = "https://bitcointalk.org/index.php?topic=181443.msg1928890#msg1928890";
-	public static final String AUTHOR_TWITTER_URL = "https://twitter.com/#!/bitcoins4life";
-	public static final String AUTHOR_GOOGLEPLUS_URL = "https://profiles.google.com/hardware.hank";
+	public static final String AUTHOR_TWITTER_URL = "https://twitter.com/Feathercoin";
+	public static final String AUTHOR_GOOGLEPLUS_URL = "";
 	public static final String MARKET_APP_URL = "market://details?id=%s";
 	public static final String WEBMARKET_APP_URL = "https://play.google.com/store/apps/details?id=%s";
 	public static final String MARKET_PUBLISHER_URL = "market://search?q=pub:\"Feathercoin Application Team\"";

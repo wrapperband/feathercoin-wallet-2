@@ -72,7 +72,7 @@ Next, you need to build feathercoinj. In your workspace, use
 
 	git clone https://github.com/wellenreiter01/feathercoinj/ feathercoinj
 	cd feathercoinj
-	mvn clean install
+	mvn clean install -DskipTests
 
 Finally, you can build Feathercoin Wallet and sign it with your development key. Again in your workspace,
 use
