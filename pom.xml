@@ -22,7 +22,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.0</version>
+				<version>3.6.1</version>
 				<configuration>
 					<source>1.5</source>
 					<target>1.5</target>
@@ -57,10 +57,11 @@
 				<plugin>
 					<groupId>com.jayway.maven.plugins.android.generation2</groupId>
 					<artifactId>android-maven-plugin</artifactId>
-					<version>3.5.1</version>
+					<version>4.0.0-rc.2</version>
 					<configuration>
 						<genDirectory>${basedir}/gen</genDirectory>
 					</configuration>
+                                         <inherited>true</inherited>
 					<extensions>true</extensions>
 				</plugin>
 				<plugin>
@@ -72,8 +73,11 @@
 		</pluginManagement>
 
 	</build>
+        
+
 
 	<properties>
+                <android.maven.version>3.3.9</android.maven.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 

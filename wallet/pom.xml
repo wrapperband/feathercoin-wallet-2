@@ -53,9 +53,7 @@
 		<dependency>
 			<groupId>com.google</groupId>
 			<artifactId>feathercoinj</artifactId>
-
 			<version>0.98-SNAPSHOT</version>
-
 		</dependency>
 
 		<!-- com.feathercoin.wallet.integration.android.* -->
@@ -190,7 +188,7 @@
 			    <inherited>true</inherited>
 			    <configuration>
 				<sign>
-				    <debug>false</debug>
+				    <debug>true</debug>
 				</sign>
 				<zipalign>
 				    <verbose>true</verbose>
